@@ -1,0 +1,85 @@
+.container{
+    display: grid;
+    grid-template-columns: 100px repeat(4, 1fr);
+    grid-template-rows: 40px 75px 1fr 50px;
+    grid-template-areas: 
+    "nv nv nv nv nv"
+    "sd hd hd hd hd"
+    "sd mn mn mn mn"
+    "sd ft ft ft ft";
+}
+.navbar{
+    Color: blue;
+    grid-area: nv;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(139, 161, 139);
+    color: yellow;
+    grid-area: hd;
+    align-items: center;
+    padding-left: 1%;
+}
+.main{
+    background-color: rgb(139, 161, 139);
+    color: rgb(112, 2, 112)   ;
+    grid-area: mn;
+    padding: 2%;
+    align-content: right;
+    display: flex;
+    flex-direction: column;
+    padding-top: 0%;
+}
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(139, 161, 139);
+    color: purple;
+    grid-area: sd;
+    justify-content: flex-start;
+    align-items: left;
+    
+}
+.footer{
+    display: flex;
+    background-color: rgb(139, 161, 139);
+    color: purple;
+    grid-area: ft;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.box {
+  border: 1px solid black;
+}
+html{
+  background-color: rgb(139, 161, 139);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* unvisited link */
+a:link {
+  color: rgb(36, 240, 9);
+}
+
+/* visited link */
+a:visited {
+  color: rgb(2, 58, 2);
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+
+img {
+  border-radius: 8px;
+}
